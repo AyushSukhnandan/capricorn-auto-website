@@ -689,85 +689,67 @@ gtag('js', new Date());
 });
 
 const brandData = {
-            "BMW": { 
-                description: "Operating as an independent owner-operator specialist, I provide dedicated, one-on-one expert care for every generation of your BMW. You deal directly with the master technician working on your car, ensuring absolute accountability, transparent communication, and meticulous precision from start to finish.", 
-                highlights: [
-                    "Direct One-on-One Master Tech Service", 
-                    "M-Power High-Performance Calibration", 
-                    "Double-VANOS & Timing Chain Overhauls", 
-                    "ZF 8-Speed Gearbox Servicing & Tuning", 
-                    "Walnut Blasting Carbon Clean Service", 
-                    "DME Software Upgrades & Diagnostics", 
-                    "Cooling System Preventative Upgrades",
-                    "Customized Preventative Maintenance Plans"
-                ] 
-            },
-            "VW": { 
-                description: "As a specialized independent operator, I personally unlock the true potential and reliability of Volkswagen's legendary engines. Whether it's a track-focused Golf R or a daily GTI, your vehicle receives my undivided, hands-on attention, precise technical diagnostics, and uncompromising workmanship.", 
-                highlights: [
-                    "Personalized Hands-On Attention", 
-                    "DSG Mechatronic & Clutch Replacement", 
-                    "Stage 1 to 3 ECU & TCU Performance Tuning", 
-                    "TFSI/TSI Engine Rebuilds & Head Servicing", 
-                    "Haldex AWD System Servicing & Maintenance", 
-                    "High-Pressure Fuel Pump (HPFP) Upgrades", 
-                    "Turbocharger Assembly & Boost Leak Diagnostics",
-                    "Direct Diagnostic & Repair Transparency"
-                ] 
-            },
-            "Porsche": { 
-                description: "Porsche engineering demands uncompromising precision and specialized individual focus. Working solo on your vehicle, I provide dealership-level diagnostics, specialist track preparation, and meticulous mechanical preservation tailored precisely to your driving style and machine.", 
-                highlights: [
-                    "Dedicated Specialist One-on-One Care", 
-                    "Bore Scoring & Endoscope Inspections", 
-                    "PDK Transmission Fluid & Clutch Service", 
-                    "IMS Bearing Upgrades & Preventative Fixes", 
-                    "Professional Corner Weighting & Suspension Setup", 
-                    "Dry Sump Oil System Maintenance", 
-                    "Track-Day Inspection & Brake Bedding",
-                    "Meticulous Hand-Finished Detailing"
-                ] 
-            },
-            "Mercedes": { 
-                description: "Harnessing the immense engineering power of Stuttgart, I personally ensure your AMG performance powerhouse or luxury Mercedes-Benz operates flawlessly. From hand-built bi-turbo powerplants to complex electrical troubleshooting, you get dedicated master-level care without middlemen.", 
-                highlights: [
-                    "Direct Solo Master Diagnostics & Repair", 
-                    "AMG Bi-Turbo Cooling & Performance Enhancements", 
-                    "AirMatic & ABC Active Suspension Troubleshooting", 
-                    "MCT SpeedShift Clutch Adaptation & Servicing", 
-                    "COMAND & Electronic Control Unit Programming", 
-                    "Rear Differential & Axle Overhauls", 
-                    "Comprehensive Periodic B-Service Maintenance",
-                    "Customized Performance Exhaust Fitting"
-                ] 
-            },
-            "Mini Cooper": { 
-                description: "These agile British-engineered machines require specialized diagnostic care and targeted individual attention. Operating independently, I personally address high-pressure fuel pump vulnerabilities, timing assembly wear, and custom chassis setups so your Mini retains its legendary go-kart feel safely.", 
-                highlights: [
-                    "Direct Independent Specialist Insight", 
-                    "Turbo Wastegate & Actuator Repairs", 
-                    "Timing Chain Assembly Replacements", 
-                    "Polyurethane Bushing Upgrades & Installation", 
-                    "Intake Valve Carbon Dekeying Service", 
-                    "Supercharger Rebuilds (Gen 1 Models)", 
-                    "Precision Chassis Alignment & Corner Balancing",
-                    "Reliability Modifications & Custom Tweaks"
-                ] 
-            },
-            "Audi": { 
-                description: "Mastering the complexities of Vorsprung durch Technik on a solo-operated basis, I personally specialize in maximizing Quattro all-wheel-drive drivetrains, servicing S-Tronic transmissions, and tuning powerplants like the 2.5 TFSI. You receive direct, expert accountability on every job.", 
-                highlights: [
-                    "Direct Expert Accountability & Service", 
-                    "Quattro All-Wheel Drive System Servicing", 
-                    "S-Tronic Dual-Clutch Fluid & Filter Flushes", 
-                    "Direct Injection Carbon Defouling Services", 
-                    "Custom Dynamic Exhaust & Downpipe Upgrades", 
-                    "Mechatronic Repair & Solenoid Replacement", 
-                    "Boost Control & Wastegate Fine-Tuning",
-                    "Comprehensive Pre-Purchase Technical Inspections"
-                ] 
-            }
-        };
+    "BMW": { 
+        description: "Operating as an independent solo specialist, I provide direct, one-on-one expert care for your BMW. You deal directly with the technician working on your car, ensuring absolute transparency and precision.", 
+        highlights: [
+            "Direct One-on-One Master Service", 
+            "Double-VANOS & Timing Overhauls", 
+            "ZF 8-Speed Gearbox Servicing", 
+            "Walnut Blasting Carbon Clean", 
+            "DME Diagnostics & Tuning"
+        ] 
+    },
+    "VW": { 
+        description: "As a specialized independent operator, I personally unlock the true potential of Volkswagen engines. From Golf Rs to daily GTIs, your vehicle receives my undivided, hands-on attention.", 
+        highlights: [
+            "Personalized Hands-On Attention", 
+            "DSG Mechatronic & Clutch Service", 
+            "Stage 1-3 ECU & TCU Tuning", 
+            "TFSI/TSI Engine Rebuilds", 
+            "Haldex AWD Servicing"
+        ] 
+    },
+    "Porsche": { 
+        description: "Porsche engineering demands uncompromising precision. Working solo, I provide dealership-level diagnostics, specialist track preparation, and meticulous mechanical preservation.", 
+        highlights: [
+            "Dedicated Specialist One-on-One Care", 
+            "Bore Scoring & Endoscope Scans", 
+            "PDK Transmission Fluid Service", 
+            "IMS Bearing Upgrades", 
+            "Suspension & Corner Weighting"
+        ] 
+    },
+    "Mercedes": { 
+        description: "I personally ensure your AMG powerhouse or luxury Mercedes-Benz operates flawlessly. From bi-turbo performance to complex electrical troubleshooting, you get dedicated care without middlemen.", 
+        highlights: [
+            "Direct Solo Master Diagnostics", 
+            "AMG Bi-Turbo Enhancements", 
+            "AirMatic & ABC Suspension Fixes", 
+            "MCT SpeedShift Servicing", 
+            "Periodic B-Service Maintenance"
+        ] 
+    },
+    "Mini Cooper": { 
+        description: "These agile machines require targeted individual attention. Operating independently, I personally address high-pressure fuel systems, timing wear, and custom setups to keep that go-kart feel.", 
+        highlights: [
+            "Direct Independent Specialist Insight", 
+            "Timing Chain Replacements", 
+            "Intake Valve Carbon Dekeying", 
+            "Supercharger Rebuilds (Gen 1)", 
+            "Precision Chassis Alignment"
+        ] 
+    },
+    "Audi": { 
+        description: "Mastering Vorsprung durch Technik solo, I specialize in maximizing Quattro all-wheel-drive drivetrains, S-Tronic transmissions, and high-performance TFSI powerplants with direct accountability.", 
+        highlights: [
+            "Direct Expert Accountability", 
+            "Quattro AWD System Servicing", 
+            "S-Tronic Dual-Clutch Flushes", 
+            "Direct Injection Carbon Defouling", 
+            "Mechatronic Repair & Solenoids"
+        ] 
+    }
+};
 
         const modal = document.getElementById('specialty-modal');
         const modalContent = modal.querySelector('.relative');
